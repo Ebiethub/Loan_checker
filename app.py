@@ -6,8 +6,8 @@ from langchain.chains import LLMChain
 from langchain.prompts import PromptTemplate
 
 # API Keys (Replace with actual keys)
-INTEREST_API_KEY = "NCDaXaGyPDS7dEf8f7kP9w==9Tp38ePChM56QGB8"
-GROQ_API_KEY = "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"
+INTEREST_API_KEY = st.secrets["INTEREST_API_KEY"]
+GROQ_API_KEY = st.secrets["GROQ_API_KEY"]
 
 # Function to fetch real-time interest rates
 def get_interest_rate():
